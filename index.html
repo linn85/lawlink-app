@@ -351,7 +351,7 @@
     const container = createElement('div', { classes: 'flex flex-col items-center justify-center h-full min-h-screen bg-white' });
     // Logo placeholder
     const logo = createElement('img', {
-      attrs: { src: 'https://placehold.co/200x80?text=LawLink+Logo', alt: 'Logo aplikasi LawLink berwarna biru dan emas, desain modern dan profesional' },
+      attrs: { src: 'Lawlink new logo.png', alt: 'Logo aplikasi LawLink' },
       classes: 'mb-8 w-48 h-auto object-contain',
     });
     container.appendChild(logo);

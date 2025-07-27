@@ -376,20 +376,20 @@
     {
       title: 'Solusi Hukum & Notaris Digital',
       description: 'Menyediakan layanan hukum dan notaris secara digital dengan mudah dan terpercaya.',
-      image: 'https://placehold.co/400x300/png?text=Ilustrasi+Hukum+Digital',
+      image: 'boardpage1.png',
       alt: 'Ilustrasi digital hukum dengan simbol timbangan keadilan dan dokumen digital',
     },
     {
       title: 'Konsultasi Lawyer & Notaris Profesional',
       description: 'Konsultasi langsung dengan lawyer dan notaris berpengalaman dan profesional.',
-      image: 'https://placehold.co/400x300/png?text=Ikon+Konsultasi+Profesional',
-      alt: 'Ikon dua orang sedang berdiskusi dengan latar belakang simbol hukum',
+      image: 'boardpage2.png',
+      alt: 'Ikon dua orang sedang berdiskusi',
     },
     {
       title: 'Dokumen Legal & Akta Notaris',
       description: 'Akses dan pengurusan dokumen legal serta akta notaris dengan mudah dan cepat.',
-      image: 'https://placehold.co/400x300/png?text=Ikon+Dokumen+Legal',
-      alt: 'Ikon dokumen legal dengan segel resmi dan pena tanda tangan',
+      image: 'boardpage3.png',
+      alt: 'Ikon dokumen legal',
     },
   ];
 

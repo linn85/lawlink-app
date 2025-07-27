@@ -975,8 +975,31 @@
 
     const pilihanGrid = createElement('div', { classes: 'grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4' });
 
-    const lawyers = loadFromStorage(STORAGE_KEYS.LAWYERS) || [];
-    const notaris = loadFromStorage(STORAGE_KEYS.NOTARIS) || [];
+    const lawyers = [
+    {
+        name: "Andi Prasetyo",
+        specialization: "Hukum Perdata",
+        photo: "pengacara1.png"
+    },
+    {
+        name: "Sari Dewi",
+        specialization: "Hukum Perusahaan",
+        photo: "pengacara2.png"
+    }
+];
+      
+    const notaris = [
+    {
+       name: "Budi Santoso",
+        specialization: "Pertanahan",
+        photo: "pengacara3.png"
+    },
+    {
+        name: "Emily Davis",
+        specialization: "Perjanjian",
+        photo: "pengacara4.png"
+    }
+];
 
     const combined = [...lawyers, ...notaris];
 
@@ -1012,7 +1035,57 @@
 
     const blogGrid = createElement('div', { classes: 'grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4' });
 
-    const blogs = loadFromStorage(STORAGE_KEYS.BLOGS) || [];
+    const blogs = function showBlogPosts() {
+    hideAllSections();
+    document.getElementById('blogSection').style.display = 'block';
+    
+    const blogPosts = [
+        {
+            title: "Prosedur Pembuatan Surat Kuasa yang Benar",
+            excerpt: "Panduan lengkap cara membuat surat kuasa secara legal dan efektif.",
+            image: "blog1.png",
+            date: "25 Juli 2025",
+            category: "Hukum Perdata"
+        },
+        {
+            title: "Jenis-Jenis Akta Notaris yang Umum Digunakan",
+            excerpt: "Penjelasan tentang akta notaris yang sering digunakan dalam kehidupan sehari-hari.",
+            image: "blog2.png",
+            date: "20 Juli 2023",
+            category: "Notaris"
+        },
+        {
+            title: "Hak dan Kewajiban dalam Perjanjian Kerja",
+            excerpt: "Memahami hak dan kewajiban antara karyawan dan pengusaha.",
+            image: "blog3.png",
+            date: "15 Juli 2020",
+            category: "Hukum Ketenagakerjaan"
+        }
+    ];
+    
+    const container = document.querySelector('.blog-posts-container');
+    container.innerHTML = '';
+    
+    blogPosts.forEach(post => {
+        const card = document.createElement('div');
+        card.className = 'bg-white rounded-lg shadow-md overflow-hidden';
+        card.innerHTML = `
+            <img src="${post.image}" alt="${post.title}" class="w-full h-48 object-cover">
+            <div class="p-4">
+                <span class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">${post.category}</span>
+                <h3 class="font-bold text-lg mt-2 mb-2">${post.title}</h3>
+                <p class="text-gray-600 text-sm mb-3">${post.excerpt}</p>
+                <div class="flex justify-between items-center">
+                    <span class="text-gray-500 text-xs">${post.date}</span>
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white text-sm font-bold py-2 px-4 rounded">
+                        Baca Selengkapnya
+                    </button>
+                </div>
+            </div>
+        `;
+        container.appendChild(card);
+    });
+}
 
     blogs.slice(0, 3).forEach(blog => {
       const card = createElement('div', { classes: 'bg-white rounded-lg shadow overflow-hidden flex flex-col' });
@@ -2232,3 +2305,4 @@
 
 </body>
 </html>
+

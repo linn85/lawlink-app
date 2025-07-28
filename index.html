@@ -64,7 +64,7 @@
       id: 'lawyer1',
       name: 'Andi Prasetyo',
       specialization: 'Hukum Perdata',
-      photo: 'https://placehold.co/150x150/png?text=Andi+Prasetyo',
+      photo: 'pengacara1.png',
     },
     {
       id: 'lawyer2',
@@ -387,7 +387,7 @@
     container.className = 'flex flex-col items-center justify-center h-screen bg-white';
 
     const logo = document.createElement('img');
-    logo.src = 'https://placehold.co/150x150/png?text=LawLink+Logo';
+    logo.src = 'Lawlink new logo.png';
     logo.alt = 'Logo aplikasi LawLink, placeholder logo berwarna biru dan emas dengan tulisan LawLink';
     logo.className = 'w-36 h-36 mb-8';
 
@@ -411,19 +411,19 @@
       {
         title: 'Solusi Hukum & Notaris Digital',
         description: 'Nikmati kemudahan layanan hukum dan notaris secara digital dengan LawLink.',
-        image: 'https://placehold.co/400x300/png?text=Ilustrasi+Hukum+Digital',
+        image: 'boardpage1.png',
         alt: 'Ilustrasi digital hukum dengan simbol timbangan keadilan dan dokumen digital',
       },
       {
         title: 'Konsultasi Lawyer & Notaris Profesional',
         description: 'Konsultasi langsung dengan lawyer dan notaris berpengalaman kapan saja.',
-        image: 'https://placehold.co/400x300/png?text=Ikon+Konsultasi+Profesional',
+        image: 'boardpage2.png',
         alt: 'Ikon dua orang sedang berdiskusi dengan latar belakang simbol hukum',
       },
       {
         title: 'Dokumen Legal & Akta Notaris',
         description: 'Akses dan kelola dokumen legal serta akta notaris dengan mudah dan aman.',
-        image: 'https://placehold.co/400x300/png?text=Ikon+Dokumen+Legal',
+        image: 'boardpage3.png',
         alt: 'Ikon dokumen legal dengan segel resmi dan pena',
       },
     ];

@@ -1,4 +1,4 @@
-<html lang="id" class="scroll-smooth" >
+<html lang="id" class="scroll-smooth">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -69,25 +69,25 @@
       id: 'lawyer1',
       name: 'Andi Prasetyo',
       specialization: 'Hukum Perdata',
-      photo: 'https://placehold.co/150x150/png?text=Andi+Prasetyo',
+      photo: 'https://placehold.co/150x150/png?text=Andi+Prasetyo+Lawyer+Portrait',
     },
     {
       id: 'lawyer2',
       name: 'Sari Dewi',
       specialization: 'Hukum Pidana',
-      photo: 'https://placehold.co/150x150/png?text=Sari+Dewi',
+      photo: 'https://placehold.co/150x150/png?text=Sari+Dewi+Lawyer+Portrait',
     },
     {
       id: 'lawyer3',
       name: 'Budi Santoso',
       specialization: 'Hukum Bisnis',
-      photo: 'https://placehold.co/150x150/png?text=Budi+Santoso',
+      photo: 'https://placehold.co/150x150/png?text=Budi+Santoso+Lawyer+Portrait',
     },
     {
       id: 'lawyer4',
       name: 'Rina Wulandari',
       specialization: 'Hukum Keluarga',
-      photo: 'https://placehold.co/150x150/png?text=Rina+Wulandari',
+      photo: 'https://placehold.co/150x150/png?text=Rina+Wulandari+Lawyer+Portrait',
     },
   ];
 
@@ -96,13 +96,13 @@
       id: 'notaris1',
       name: 'Dewi Kartika',
       specialization: 'Akta Notaris',
-      photo: 'https://placehold.co/150x150/png?text=Dewi+Kartika',
+      photo: 'https://placehold.co/150x150/png?text=Dewi+Kartika+Notaris+Portrait',
     },
     {
       id: 'notaris2',
       name: 'Joko Susilo',
       specialization: 'PPAT & Legalisasi',
-      photo: 'https://placehold.co/150x150/png?text=Joko+Susilo',
+      photo: 'https://placehold.co/150x150/png?text=Joko+Susilo+Notaris+Portrait',
     },
   ];
 
@@ -111,21 +111,21 @@
       id: 'blog1',
       title: 'Prosedur Pembuatan Surat Kuasa',
       preview: 'Langkah-langkah mudah untuk membuat surat kuasa secara legal.',
-      thumbnail: 'https://placehold.co/400x250/png?text=Surat+Kuasa',
+      thumbnail: 'https://placehold.co/400x250/png?text=Prosedur+Pembuatan+Surat+Kuasa+Legal+Document',
       content: 'Isi lengkap artikel prosedur pembuatan surat kuasa...',
     },
     {
       id: 'blog2',
       title: 'Tips Memilih Lawyer Profesional',
       preview: 'Cara memilih lawyer yang tepat untuk kebutuhan hukum Anda.',
-      thumbnail: 'https://placehold.co/400x250/png?text=Tips+Lawyer',
+      thumbnail: 'https://placehold.co/400x250/png?text=Tips+Memilih+Lawyer+Profesional+Consultation',
       content: 'Isi lengkap artikel tips memilih lawyer profesional...',
     },
     {
       id: 'blog3',
       title: 'Manfaat Jasa Notaris untuk Dokumen Anda',
       preview: 'Kenali pentingnya notaris dalam pengurusan dokumen legal.',
-      thumbnail: 'https://placehold.co/400x250/png?text=Jasa+Notaris',
+      thumbnail: 'https://placehold.co/400x250/png?text=Manfaat+Jasa+Notaris+Legal+Documents',
       content: 'Isi lengkap artikel manfaat jasa notaris...',
     },
   ];
@@ -351,7 +351,7 @@
     const container = createElement('div', { classes: 'flex flex-col items-center justify-center h-full min-h-screen bg-white' });
     // Logo placeholder
     const logo = createElement('img', {
-      attrs: { src: 'Lawlink new logo.png', alt: 'Logo aplikasi LawLink' },
+      attrs: { src: 'https://placehold.co/200x80/png?text=LawLink+Logo', alt: 'Logo aplikasi LawLink' },
       classes: 'mb-8 w-48 h-auto object-contain',
     });
     container.appendChild(logo);
@@ -376,19 +376,19 @@
     {
       title: 'Solusi Hukum & Notaris Digital',
       description: 'Menyediakan layanan hukum dan notaris secara digital dengan mudah dan terpercaya.',
-      image: 'boardpage1.png',
+      image: 'https://placehold.co/400x300/png?text=Ilustrasi+digital+hukum+dengan+simbol+timbangan+keadilan+dan+dokumen+digital',
       alt: 'Ilustrasi digital hukum dengan simbol timbangan keadilan dan dokumen digital',
     },
     {
       title: 'Konsultasi Lawyer & Notaris Profesional',
       description: 'Konsultasi langsung dengan lawyer dan notaris berpengalaman dan profesional.',
-      image: 'boardpage2.png',
+      image: 'https://placehold.co/400x300/png?text=Ikon+dua+orang+sedang+berdiskusi',
       alt: 'Ikon dua orang sedang berdiskusi',
     },
     {
       title: 'Dokumen Legal & Akta Notaris',
       description: 'Akses dan pengurusan dokumen legal serta akta notaris dengan mudah dan cepat.',
-      image: 'boardpage3.png',
+      image: 'https://placehold.co/400x300/png?text=Ikon+dokumen+legal',
       alt: 'Ikon dokumen legal',
     },
   ];
@@ -407,7 +407,7 @@
         attrs: { src: slide.image, alt: slide.alt },
         classes: 'mx-auto mb-6 max-w-full h-auto rounded-lg shadow-md',
       });
-      const title = createElement('h2', { classes: 'text-2xl font-bold text-[${PRIMARY_COLOR}] mb-2', text: slide.title });
+      const title = createElement('h2', { classes: `text-2xl font-bold text-[${PRIMARY_COLOR}] mb-2`, text: slide.title });
       const desc = createElement('p', { classes: 'text-gray-700 text-base max-w-md mx-auto', text: slide.description });
       slideContainer.appendChild(img);
       slideContainer.appendChild(title);
@@ -420,7 +420,7 @@
     const dotsContainer = createElement('div', { classes: 'flex justify-center space-x-2 mt-6' });
     onboardingSlides.forEach((_, i) => {
       const dot = createElement('button', {
-        classes: `w-3 h-3 rounded-full focus:outline-none ${i === onboardingSlide ? 'bg-[${PRIMARY_COLOR}]' : 'bg-gray-300'}`,
+        classes: `w-3 h-3 rounded-full focus:outline-none ${i === onboardingSlide ? `bg-[${PRIMARY_COLOR}]` : 'bg-gray-300'}`,
         attrs: { 'aria-label': `Slide ${i + 1}` },
       });
       dot.addEventListener('click', () => {
@@ -434,7 +434,7 @@
 
     function updateDots() {
       Array.from(dotsContainer.children).forEach((dot, i) => {
-        dot.className = `w-3 h-3 rounded-full focus:outline-none ${i === onboardingSlide ? 'bg-[${PRIMARY_COLOR}]' : 'bg-gray-300'}`;
+        dot.className = `w-3 h-3 rounded-full focus:outline-none ${i === onboardingSlide ? `bg-[${PRIMARY_COLOR}]` : 'bg-gray-300'}`;
       });
     }
 
@@ -442,7 +442,7 @@
     const buttonsContainer = createElement('div', { classes: 'flex justify-between mt-8' });
 
     const skipBtn = createElement('button', {
-      classes: 'text-[${PRIMARY_COLOR}] font-semibold hover:underline focus:outline-none',
+      classes: `text-[${PRIMARY_COLOR}] font-semibold hover:underline focus:outline-none`,
       text: 'Skip',
     });
     skipBtn.addEventListener('click', () => {
@@ -450,12 +450,12 @@
     });
 
     const nextBtn = createElement('button', {
-      classes: 'bg-[${PRIMARY_COLOR}] text-white px-4 py-2 rounded hover:bg-blue-700 focus:outline-none',
+      classes: `bg-[${PRIMARY_COLOR}] text-white px-4 py-2 rounded hover:bg-blue-700 focus:outline-none`,
       text: 'Next',
     });
 
     const getStartedBtn = createElement('button', {
-      classes: 'bg-[${ACCENT_COLOR}] text-gray-900 px-4 py-2 rounded hover:bg-yellow-400 focus:outline-none hidden',
+      classes: `bg-[${ACCENT_COLOR}] text-gray-900 px-4 py-2 rounded hover:bg-yellow-400 focus:outline-none hidden`,
       text: 'Get Started',
     });
 
@@ -502,7 +502,7 @@
 
     const card = createElement('div', { classes: 'w-full max-w-md bg-white shadow-lg rounded-lg p-8' });
 
-    const title = createElement('h1', { classes: 'text-3xl font-bold mb-6 text-[${PRIMARY_COLOR}] text-center', text: mode === 'login' ? 'Masuk ke LawLink' : 'Daftar Akun LawLink' });
+    const title = createElement('h1', { classes: `text-3xl font-bold mb-6 text-[${PRIMARY_COLOR}] text-center`, text: mode === 'login' ? 'Masuk ke LawLink' : 'Daftar Akun LawLink' });
     card.appendChild(title);
 
     // Form
@@ -514,7 +514,7 @@
       const nameGroup = createElement('div', { classes: 'flex flex-col' });
       const label = createElement('label', { classes: 'mb-1 font-semibold', text: 'Nama Lengkap' });
       inputName = createElement('input', {
-        classes: 'border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[${PRIMARY_COLOR}]',
+        classes: `border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[${PRIMARY_COLOR}]`,
         attrs: { type: 'text', placeholder: 'Masukkan nama lengkap', required: 'required', id: 'inputName' },
       });
       const error = createElement('p', { classes: 'text-red-600 text-sm mt-1 hidden', text: 'Nama lengkap wajib diisi.' });
@@ -528,7 +528,7 @@
     const inputEmailPhoneGroup = createElement('div', { classes: 'flex flex-col' });
     const labelEmailPhone = createElement('label', { classes: 'mb-1 font-semibold', text: 'Email atau Nomor Telepon' });
     const inputEmailPhone = createElement('input', {
-      classes: 'border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[${PRIMARY_COLOR}]',
+      classes: `border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[${PRIMARY_COLOR}]`,
       attrs: { type: 'text', placeholder: 'Masukkan email atau nomor telepon', required: 'required', id: 'inputEmailPhone' },
     });
     const errorEmailPhone = createElement('p', { classes: 'text-red-600 text-sm mt-1 hidden', text: 'Format email atau nomor telepon tidak valid.' });
@@ -541,7 +541,7 @@
     const inputPasswordGroup = createElement('div', { classes: 'flex flex-col relative' });
     const labelPassword = createElement('label', { classes: 'mb-1 font-semibold', text: 'Password' });
     const inputPassword = createElement('input', {
-      classes: 'border border-gray-300 rounded px-3 py-2 pr-10 focus:outline-none focus:ring-2 focus:ring-[${PRIMARY_COLOR}]',
+      classes: `border border-gray-300 rounded px-3 py-2 pr-10 focus:outline-none focus:ring-2 focus:ring-[${PRIMARY_COLOR}]`,
       attrs: { type: 'password', placeholder: 'Masukkan password', required: 'required', id: 'inputPassword' },
     });
     const togglePasswordBtn = createElement('button', {
@@ -562,7 +562,7 @@
       const confirmGroup = createElement('div', { classes: 'flex flex-col relative' });
       const labelConfirm = createElement('label', { classes: 'mb-1 font-semibold', text: 'Konfirmasi Password' });
       inputConfirmPassword = createElement('input', {
-        classes: 'border border-gray-300 rounded px-3 py-2 pr-10 focus:outline-none focus:ring-2 focus:ring-[${PRIMARY_COLOR}]',
+        classes: `border border-gray-300 rounded px-3 py-2 pr-10 focus:outline-none focus:ring-2 focus:ring-[${PRIMARY_COLOR}]`,
         attrs: { type: 'password', placeholder: 'Konfirmasi password', required: 'required', id: 'inputConfirmPassword' },
       });
       const toggleConfirmBtn = createElement('button', {
@@ -607,7 +607,7 @@
       const roleGroup = createElement('div', { classes: 'flex flex-col' });
       const labelRole = createElement('label', { classes: 'mb-1 font-semibold', text: 'Jenis Pengguna' });
       roleSelect = createElement('select', {
-        classes: 'border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[${PRIMARY_COLOR}]',
+        classes: `border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[${PRIMARY_COLOR}]`,
         attrs: { id: 'roleSelect' },
       });
       ['Klien', 'Lawyer', 'Notaris'].forEach((role) => {
@@ -628,7 +628,7 @@
         classes: '',
         attrs: { type: 'checkbox', id: 'termsCheckbox', required: 'required' },
       });
-      const termsLabel = createElement('label', { classes: 'text-sm', html: 'Saya setuju dengan <a href="#" class="text-[${PRIMARY_COLOR}] underline">Syarat & Ketentuan</a>' });
+      const termsLabel = createElement('label', { classes: 'text-sm', html: `Saya setuju dengan <a href="#" class="text-[${PRIMARY_COLOR}] underline">Syarat & Ketentuan</a>` });
       errorTerms = createElement('p', { classes: 'text-red-600 text-sm mt-1 hidden', text: 'Anda harus menyetujui syarat & ketentuan.' });
       termsGroup.appendChild(termsCheckbox);
       termsGroup.appendChild(termsLabel);
@@ -648,12 +648,12 @@
     // Links
     const linksContainer = createElement('div', { classes: 'mt-4 text-center text-sm text-gray-600' });
     if (mode === 'login') {
-      const forgotLink = createElement('a', { classes: 'text-[${PRIMARY_COLOR}] hover:underline cursor-pointer mr-4', text: 'Lupa password?' });
+      const forgotLink = createElement('a', { classes: `text-[${PRIMARY_COLOR}] hover:underline cursor-pointer mr-4`, text: 'Lupa password?' });
       forgotLink.addEventListener('click', (e) => {
         e.preventDefault();
         alert('Fitur lupa password belum tersedia.');
       });
-      const registerLink = createElement('a', { classes: 'text-[${PRIMARY_COLOR}] hover:underline cursor-pointer', text: 'Belum punya akun? Daftar' });
+      const registerLink = createElement('a', { classes: `text-[${PRIMARY_COLOR}] hover:underline cursor-pointer`, text: 'Belum punya akun? Daftar' });
       registerLink.addEventListener('click', (e) => {
         e.preventDefault();
         navigateTo('register');
@@ -661,7 +661,7 @@
       linksContainer.appendChild(forgotLink);
       linksContainer.appendChild(registerLink);
     } else {
-      const loginLink = createElement('a', { classes: 'text-[${PRIMARY_COLOR}] hover:underline cursor-pointer', text: 'Sudah punya akun? Masuk' });
+      const loginLink = createElement('a', { classes: `text-[${PRIMARY_COLOR}] hover:underline cursor-pointer`, text: 'Sudah punya akun? Masuk' });
       loginLink.addEventListener('click', (e) => {
         e.preventDefault();
         navigateTo('login');
@@ -816,7 +816,7 @@
 
   // Header component for main pages
   function createHeader(titleText) {
-    const header = createElement('header', { classes: 'flex items-center justify-between bg-[${PRIMARY_COLOR}] text-white p-4 shadow-md sticky top-0 z-30' });
+    const header = createElement('header', { classes: `flex items-center justify-between bg-[${PRIMARY_COLOR}] text-white p-4 shadow-md sticky top-0 z-30` });
     const title = createElement('h1', { classes: 'text-xl font-bold', text: titleText });
     const rightGroup = createElement('div', { classes: 'flex items-center space-x-4' });
 
@@ -855,7 +855,7 @@
     const nav = createElement('nav', { classes: 'fixed bottom-0 left-0 right-0 bg-white border-t border-gray-300 flex justify-around items-center h-14 z-40' });
     tabs.forEach(tab => {
       const btn = createElement('button', {
-        classes: `flex flex-col items-center justify-center text-sm focus:outline-none ${tab.id === activeTab ? 'text-[${PRIMARY_COLOR}]' : 'text-gray-500'}`,
+        classes: `flex flex-col items-center justify-center text-sm focus:outline-none ${tab.id === activeTab ? `text-[${PRIMARY_COLOR}]` : 'text-gray-500'}`,
         attrs: { 'aria-label': tab.label },
       });
       btn.innerHTML = `<i class="${tab.icon} fa-lg mb-1"></i><span>${tab.label}</span>`;
@@ -880,7 +880,7 @@
     container.appendChild(header);
 
     // Ringkasan layanan
-    const summary = createElement('section', { classes: 'p-4 bg-[${PRIMARY_COLOR}] text-white rounded-b-lg shadow-md' });
+    const summary = createElement('section', { classes: `p-4 bg-[${PRIMARY_COLOR}] text-white rounded-b-lg shadow-md` });
     summary.innerHTML = `
       <p class="text-center text-lg max-w-xl mx-auto">LawLink menyediakan solusi hukum digital terpercaya untuk kebutuhan Anda, mulai dari konsultasi, jasa notaris, hingga pengurusan dokumen legal.</p>
     `;
@@ -897,7 +897,7 @@
     ];
     dashboardItems.forEach(item => {
       const card = createElement('button', {
-        classes: 'bg-white rounded-lg shadow p-4 flex flex-col items-center justify-center hover:shadow-lg focus:outline-none',
+        classes: `bg-white rounded-lg shadow p-4 flex flex-col items-center justify-center hover:shadow-lg focus:outline-none`,
         attrs: { type: 'button' },
       });
       card.innerHTML = `<i class="${item.icon} fa-3x text-[${PRIMARY_COLOR}] mb-3"></i><span class="font-semibold text-center">${item.label}</span>`;
@@ -908,7 +908,7 @@
 
     // Pintasan Layanan section
     const pintasanSection = createElement('section', { classes: 'p-4 mt-6' });
-    const pintasanTitle = createElement('h2', { classes: 'text-xl font-bold mb-4 text-[${PRIMARY_COLOR}]', text: 'Pintasan Layanan' });
+    const pintasanTitle = createElement('h2', { classes: `text-xl font-bold mb-4 text-[${PRIMARY_COLOR}]`, text: 'Pintasan Layanan' });
     pintasanSection.appendChild(pintasanTitle);
 
     const pintasanGrid = createElement('div', { classes: 'grid grid-cols-1 sm:grid-cols-2 gap-4' });
@@ -970,38 +970,13 @@
 
     // Pilihan Lawyer & Notaris section
     const pilihanSection = createElement('section', { classes: 'p-4 mt-6' });
-    const pilihanTitle = createElement('h2', { classes: 'text-xl font-bold mb-4 text-[${PRIMARY_COLOR}]', text: 'Pilihan Lawyer & Notaris' });
+    const pilihanTitle = createElement('h2', { classes: `text-xl font-bold mb-4 text-[${PRIMARY_COLOR}]`, text: 'Pilihan Lawyer & Notaris' });
     pilihanSection.appendChild(pilihanTitle);
 
     const pilihanGrid = createElement('div', { classes: 'grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4' });
 
-    const lawyers = [
-    {
-        name: "Andi Prasetyo",
-        specialization: "Hukum Perdata",
-        photo: "pengacara1.png"
-    },
-    {
-        name: "Sari Dewi",
-        specialization: "Hukum Perusahaan",
-        photo: "pengacara2.png"
-    }
-];
-      
-    const notaris = [
-    {
-       name: "Budi Santoso",
-        specialization: "Pertanahan",
-        photo: "pengacara3.png"
-    },
-    {
-        name: "Emily Davis",
-        specialization: "Perjanjian",
-        photo: "pengacara4.png"
-    }
-];
-
-    const combined = [...lawyers, ...notaris];
+    // Use initialLawyers and initialNotaris data with correct photos
+    const combined = [...initialLawyers, ...initialNotaris];
 
     combined.slice(0, 4).forEach(person => {
       const card = createElement('div', { classes: 'bg-white rounded-lg shadow p-4 flex flex-col items-center text-center' });
@@ -1030,62 +1005,12 @@
 
     // Artikel Terbaru/Blog Hukum section
     const blogSection = createElement('section', { classes: 'p-4 mt-6 mb-20' });
-    const blogTitle = createElement('h2', { classes: 'text-xl font-bold mb-4 text-[${PRIMARY_COLOR}]', text: 'Artikel Terbaru/Blog Hukum' });
+    const blogTitle = createElement('h2', { classes: `text-xl font-bold mb-4 text-[${PRIMARY_COLOR}]`, text: 'Artikel Terbaru/Blog Hukum' });
     blogSection.appendChild(blogTitle);
 
     const blogGrid = createElement('div', { classes: 'grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4' });
 
-    const blogs = function showBlogPosts() {
-    hideAllSections();
-    document.getElementById('blogSection').style.display = 'block';
-    
-    const blogPosts = [
-        {
-            title: "Prosedur Pembuatan Surat Kuasa yang Benar",
-            excerpt: "Panduan lengkap cara membuat surat kuasa secara legal dan efektif.",
-            image: "blog1.png",
-            date: "25 Juli 2025",
-            category: "Hukum Perdata"
-        },
-        {
-            title: "Jenis-Jenis Akta Notaris yang Umum Digunakan",
-            excerpt: "Penjelasan tentang akta notaris yang sering digunakan dalam kehidupan sehari-hari.",
-            image: "blog2.png",
-            date: "20 Juli 2023",
-            category: "Notaris"
-        },
-        {
-            title: "Hak dan Kewajiban dalam Perjanjian Kerja",
-            excerpt: "Memahami hak dan kewajiban antara karyawan dan pengusaha.",
-            image: "blog3.png",
-            date: "15 Juli 2020",
-            category: "Hukum Ketenagakerjaan"
-        }
-    ];
-    
-    const container = document.querySelector('.blog-posts-container');
-    container.innerHTML = '';
-    
-    blogPosts.forEach(post => {
-        const card = document.createElement('div');
-        card.className = 'bg-white rounded-lg shadow-md overflow-hidden';
-        card.innerHTML = `
-            <img src="${post.image}" alt="${post.title}" class="w-full h-48 object-cover">
-            <div class="p-4">
-                <span class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">${post.category}</span>
-                <h3 class="font-bold text-lg mt-2 mb-2">${post.title}</h3>
-                <p class="text-gray-600 text-sm mb-3">${post.excerpt}</p>
-                <div class="flex justify-between items-center">
-                    <span class="text-gray-500 text-xs">${post.date}</span>
-                    <button class="bg-blue-500 hover:bg-blue-700 text-white text-sm font-bold py-2 px-4 rounded">
-                        Baca Selengkapnya
-                    </button>
-                </div>
-            </div>
-        `;
-        container.appendChild(card);
-    });
-}
+    const blogs = loadFromStorage(STORAGE_KEYS.BLOGS) || [];
 
     blogs.slice(0, 3).forEach(blog => {
       const card = createElement('div', { classes: 'bg-white rounded-lg shadow overflow-hidden flex flex-col' });
@@ -1231,7 +1156,7 @@
 
     // Booking form
     const formSection = createElement('section', { classes: 'p-4' });
-    const formTitle = createElement('h2', { classes: 'text-xl font-bold mb-4 text-[${PRIMARY_COLOR}]', text: 'Booking Konsultasi' });
+    const formTitle = createElement('h2', { classes: `text-xl font-bold mb-4 text-[${PRIMARY_COLOR}]`, text: 'Booking Konsultasi' });
     formSection.appendChild(formTitle);
 
     const form = createElement('form', { classes: 'space-y-4' });
@@ -1240,7 +1165,7 @@
     const dateGroup = createElement('div', { classes: 'flex flex-col' });
     const dateLabel = createElement('label', { classes: 'mb-1 font-semibold', text: 'Tanggal' });
     const dateInput = createElement('input', {
-      classes: 'border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[${PRIMARY_COLOR}]',
+      classes: `border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[${PRIMARY_COLOR}]`,
       attrs: { type: 'date', required: 'required', min: new Date().toISOString().split('T')[0] },
     });
     dateGroup.appendChild(dateLabel);
@@ -1251,7 +1176,7 @@
     const timeGroup = createElement('div', { classes: 'flex flex-col' });
     const timeLabel = createElement('label', { classes: 'mb-1 font-semibold', text: 'Waktu' });
     const timeInput = createElement('input', {
-      classes: 'border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[${PRIMARY_COLOR}]',
+      classes: `border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[${PRIMARY_COLOR}]`,
       attrs: { type: 'time', required: 'required' },
     });
     timeGroup.appendChild(timeLabel);
@@ -1262,7 +1187,7 @@
     const caseGroup = createElement('div', { classes: 'flex flex-col' });
     const caseLabel = createElement('label', { classes: 'mb-1 font-semibold', text: 'Jenis Kasus' });
     const caseSelect = createElement('select', {
-      classes: 'border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[${PRIMARY_COLOR}]',
+      classes: `border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[${PRIMARY_COLOR}]`,
       attrs: { required: 'required' },
     });
     ['Pilih jenis kasus', 'Perdata', 'Pidana', 'Bisnis', 'Keluarga', 'Lainnya'].forEach((opt, i) => {
@@ -1277,7 +1202,7 @@
     const descGroup = createElement('div', { classes: 'flex flex-col' });
     const descLabel = createElement('label', { classes: 'mb-1 font-semibold', text: 'Deskripsi Masalah' });
     const descTextarea = createElement('textarea', {
-      classes: 'border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[${PRIMARY_COLOR}] resize-none',
+      classes: `border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[${PRIMARY_COLOR}] resize-none`,
       attrs: { rows: 4, placeholder: 'Jelaskan masalah hukum Anda secara singkat', required: 'required' },
     });
     descGroup.appendChild(descLabel);
@@ -1297,7 +1222,7 @@
 
     // List jadwal konsultasi
     const listSection = createElement('section', { classes: 'p-4 mt-6' });
-    const listTitle = createElement('h2', { classes: 'text-xl font-bold mb-4 text-[${PRIMARY_COLOR}]', text: 'Jadwal Konsultasi Anda' });
+    const listTitle = createElement('h2', { classes: `text-xl font-bold mb-4 text-[${PRIMARY_COLOR}]`, text: 'Jadwal Konsultasi Anda' });
     listSection.appendChild(listTitle);
 
     const listContainer = createElement('div', { classes: 'space-y-3' });
@@ -1396,7 +1321,7 @@
 
     // List layanan notaris
     const layananSection = createElement('section', { classes: 'p-4' });
-    const layananTitle = createElement('h2', { classes: 'text-xl font-bold mb-4 text-[${PRIMARY_COLOR}]', text: 'Layanan Notaris' });
+    const layananTitle = createElement('h2', { classes: `text-xl font-bold mb-4 text-[${PRIMARY_COLOR}]`, text: 'Layanan Notaris' });
     layananSection.appendChild(layananTitle);
 
     const layananList = [
@@ -1419,7 +1344,7 @@
 
     // Form pengajuan dokumen
     const formSection = createElement('section', { classes: 'p-4 mt-6' });
-    const formTitle = createElement('h2', { classes: 'text-xl font-bold mb-4 text-[${PRIMARY_COLOR}]', text: 'Pengajuan Dokumen' });
+    const formTitle = createElement('h2', { classes: `text-xl font-bold mb-4 text-[${PRIMARY_COLOR}]`, text: 'Pengajuan Dokumen' });
     formSection.appendChild(formTitle);
 
     const form = createElement('form', { classes: 'space-y-4' });
@@ -1439,7 +1364,7 @@
     const dataGroup = createElement('div', { classes: 'flex flex-col' });
     const dataLabel = createElement('label', { classes: 'mb-1 font-semibold', text: 'Data Dokumen' });
     const dataInput = createElement('input', {
-      classes: 'border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[${PRIMARY_COLOR}]',
+      classes: `border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[${PRIMARY_COLOR}]`,
       attrs: { type: 'text', placeholder: 'Masukkan data dokumen', required: 'required' },
     });
     dataGroup.appendChild(dataLabel);
@@ -1450,7 +1375,7 @@
     const jenisGroup = createElement('div', { classes: 'flex flex-col' });
     const jenisLabel = createElement('label', { classes: 'mb-1 font-semibold', text: 'Jenis Akta' });
     const jenisSelect = createElement('select', {
-      classes: 'border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[${PRIMARY_COLOR}]',
+      classes: `border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[${PRIMARY_COLOR}]`,
       attrs: { required: 'required' },
     });
     ['Pilih jenis akta', 'Akta Jual Beli', 'Akta Pendirian', 'Akta Hibah', 'Akta Wasiat'].forEach((opt, i) => {
@@ -1474,7 +1399,7 @@
 
     // Tracking status dokumen
     const trackingSection = createElement('section', { classes: 'p-4 mt-6' });
-    const trackingTitle = createElement('h2', { classes: 'text-xl font-bold mb-4 text-[${PRIMARY_COLOR}]', text: 'Tracking Status Dokumen' });
+    const trackingTitle = createElement('h2', { classes: `text-xl font-bold mb-4 text-[${PRIMARY_COLOR}]`, text: 'Tracking Status Dokumen' });
     trackingSection.appendChild(trackingTitle);
 
     const trackingList = createElement('div', { classes: 'space-y-3' });
@@ -1558,7 +1483,7 @@
 
     // Gallery template dokumen
     const gallerySection = createElement('section', { classes: 'p-4' });
-    const galleryTitle = createElement('h2', { classes: 'text-xl font-bold mb-4 text-[${PRIMARY_COLOR}]', text: 'Template Dokumen' });
+    const galleryTitle = createElement('h2', { classes: `text-xl font-bold mb-4 text-[${PRIMARY_COLOR}]`, text: 'Template Dokumen' });
     gallerySection.appendChild(galleryTitle);
 
     const templates = [
@@ -1596,7 +1521,7 @@
 
     // Form request dokumen
     const requestSection = createElement('section', { classes: 'p-4 mt-6' });
-    const requestTitle = createElement('h2', { classes: 'text-xl font-bold mb-4 text-[${PRIMARY_COLOR}]', text: 'Request Dokumen' });
+    const requestTitle = createElement('h2', { classes: `text-xl font-bold mb-4 text-[${PRIMARY_COLOR}]`, text: 'Request Dokumen' });
     requestSection.appendChild(requestTitle);
 
     const form = createElement('form', { classes: 'space-y-4' });
@@ -1605,7 +1530,7 @@
     const jenisGroup = createElement('div', { classes: 'flex flex-col' });
     const jenisLabel = createElement('label', { classes: 'mb-1 font-semibold', text: 'Jenis Dokumen' });
     const jenisSelect = createElement('select', {
-      classes: 'border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[${PRIMARY_COLOR}]',
+      classes: `border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[${PRIMARY_COLOR}]`,
       attrs: { required: 'required' },
     });
     ['Pilih jenis dokumen', 'Surat Kuasa', 'Perjanjian Kerja', 'Surat Pernyataan', 'Lainnya'].forEach((opt, i) => {
@@ -1620,7 +1545,7 @@
     const detailGroup = createElement('div', { classes: 'flex flex-col' });
     const detailLabel = createElement('label', { classes: 'mb-1 font-semibold', text: 'Detail' });
     const detailInput = createElement('input', {
-      classes: 'border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[${PRIMARY_COLOR}]',
+      classes: `border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[${PRIMARY_COLOR}]`,
       attrs: { type: 'text', placeholder: 'Masukkan detail dokumen', required: 'required' },
     });
     detailGroup.appendChild(detailLabel);
@@ -1640,7 +1565,7 @@
 
     // List dokumen saya
     const listSection = createElement('section', { classes: 'p-4 mt-6' });
-    const listTitle = createElement('h2', { classes: 'text-xl font-bold mb-4 text-[${PRIMARY_COLOR}]', text: 'Dokumen Saya' });
+    const listTitle = createElement('h2', { classes: `text-xl font-bold mb-4 text-[${PRIMARY_COLOR}]`, text: 'Dokumen Saya' });
     listSection.appendChild(listTitle);
 
     const listContainer = createElement('div', { classes: 'space-y-3' });
@@ -1733,7 +1658,7 @@
     const nameGroup = createElement('div', { classes: 'flex flex-col' });
     const nameLabel = createElement('label', { classes: 'mb-1 font-semibold', text: 'Nama Lengkap' });
     const nameInput = createElement('input', {
-      classes: 'border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[${PRIMARY_COLOR}]',
+      classes: `border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[${PRIMARY_COLOR}]`,
       attrs: { type: 'text', required: 'required' },
       text: currentUser.name,
     });
@@ -1746,7 +1671,7 @@
     const emailGroup = createElement('div', { classes: 'flex flex-col' });
     const emailLabel = createElement('label', { classes: 'mb-1 font-semibold', text: 'Email' });
     const emailInput = createElement('input', {
-      classes: 'border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[${PRIMARY_COLOR}]',
+      classes: `border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[${PRIMARY_COLOR}]`,
       attrs: { type: 'email', required: 'required' },
     });
     emailInput.value = currentUser.email || '';
@@ -1758,7 +1683,7 @@
     const phoneGroup = createElement('div', { classes: 'flex flex-col' });
     const phoneLabel = createElement('label', { classes: 'mb-1 font-semibold', text: 'Nomor Telepon' });
     const phoneInput = createElement('input', {
-      classes: 'border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[${PRIMARY_COLOR}]',
+      classes: `border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[${PRIMARY_COLOR}]`,
       attrs: { type: 'tel', required: 'required' },
     });
     phoneInput.value = currentUser.phone || '';
@@ -1770,7 +1695,7 @@
     const passGroup = createElement('div', { classes: 'flex flex-col relative' });
     const passLabel = createElement('label', { classes: 'mb-1 font-semibold', text: 'Password Baru (kosongkan jika tidak ingin ganti)' });
     const passInput = createElement('input', {
-      classes: 'border border-gray-300 rounded px-3 py-2 pr-10 focus:outline-none focus:ring-2 focus:ring-[${PRIMARY_COLOR}]',
+      classes: `border border-gray-300 rounded px-3 py-2 pr-10 focus:outline-none focus:ring-2 focus:ring-[${PRIMARY_COLOR}]`,
       attrs: { type: 'password' },
     });
     const togglePassBtn = createElement('button', {
@@ -1881,7 +1806,7 @@
 
     // List jadwal
     const listSection = createElement('section', { classes: 'p-4' });
-    const listTitle = createElement('h2', { classes: 'text-xl font-bold mb-4 text-[${PRIMARY_COLOR}]', text: 'Jadwal Anda' });
+    const listTitle = createElement('h2', { classes: `text-xl font-bold mb-4 text-[${PRIMARY_COLOR}]`, text: 'Jadwal Anda' });
     listSection.appendChild(listTitle);
 
     const listContainer = createElement('div', { classes: 'space-y-3' });
@@ -1948,7 +1873,7 @@
 
     // List cases
     const listSection = createElement('section', { classes: 'p-4' });
-    const listTitle = createElement('h2', { classes: 'text-xl font-bold mb-4 text-[${PRIMARY_COLOR}]', text: 'Daftar Kasus / Akta' });
+    const listTitle = createElement('h2', { classes: `text-xl font-bold mb-4 text-[${PRIMARY_COLOR}]`, text: 'Daftar Kasus / Akta' });
     listSection.appendChild(listTitle);
 
     const listContainer = createElement('div', { classes: 'space-y-3' });
@@ -2061,7 +1986,7 @@
     container.appendChild(header);
 
     const historySection = createElement('section', { classes: 'p-4' });
-    const historyTitle = createElement('h2', { classes: 'text-xl font-bold mb-4 text-[${PRIMARY_COLOR}]', text: 'Riwayat Konsultasi Anda' });
+    const historyTitle = createElement('h2', { classes: `text-xl font-bold mb-4 text-[${PRIMARY_COLOR}]`, text: 'Riwayat Konsultasi Anda' });
     historySection.appendChild(historyTitle);
 
     const listContainer = createElement('div', { classes: 'space-y-3' });
@@ -2137,7 +2062,7 @@
     const container = createElement('div', { classes: 'flex flex-col min-h-screen pb-16 bg-white' });
 
     // Header with back button
-    const header = createElement('header', { classes: 'flex items-center justify-between bg-[${PRIMARY_COLOR}] text-white p-4 shadow-md sticky top-0 z-30' });
+    const header = createElement('header', { classes: `flex items-center justify-between bg-[${PRIMARY_COLOR}] text-white p-4 shadow-md sticky top-0 z-30` });
     const backBtn = createElement('button', { classes: 'focus:outline-none', attrs: { 'aria-label': 'Kembali' }, html: '<i class="fas fa-arrow-left fa-lg"></i>' });
     backBtn.addEventListener('click', () => {
       if(currentUser.role === 'client') navigateTo('consultation');
@@ -2152,13 +2077,13 @@
     container.appendChild(header);
 
     // Chat messages container
-    const chatContainer = createElement('div', { classes: 'flex-grow p-4 overflow-y-auto chat-scroll space-y-3 bg-gray-100' });
+    const chatContainer = createElement('div', { classes: 'flex-grow p-4 overflow-y-auto chat-scroll space-y-3 bg-gray-100 flex flex-col' });
     container.appendChild(chatContainer);
 
     // Input area
-    const inputArea = createElement('div', { classes: 'p-4 bg-white border-t border-gray-300 flex space-x-2' });
+    const inputArea = createElement('div', { classes: `p-4 bg-white border-t border-gray-300 flex space-x-2` });
     const inputMsg = createElement('textarea', {
-      classes: 'flex-grow border border-gray-300 rounded px-3 py-2 resize-none focus:outline-none focus:ring-2 focus:ring-[${PRIMARY_COLOR}]',
+      classes: `flex-grow border border-gray-300 rounded px-3 py-2 resize-none focus:outline-none focus:ring-2 focus:ring-[${PRIMARY_COLOR}]`,
       attrs: { rows: 2, placeholder: 'Tulis pesan...' },
     });
     const sendBtn = createElement('button', {
@@ -2183,7 +2108,7 @@
       sessionChats.sort((a,b) => new Date(a.timestamp) - new Date(b.timestamp));
       sessionChats.forEach(c => {
         const msgDiv = createElement('div', {
-          classes: `max-w-xs px-3 py-2 rounded-lg break-words ${c.from === currentUser.id ? 'bg-[${PRIMARY_COLOR}] text-white self-end' : 'bg-white text-gray-800 self-start'}`,
+          classes: `max-w-xs px-3 py-2 rounded-lg break-words ${c.from === currentUser.id ? `bg-[${PRIMARY_COLOR}] text-white self-end` : 'bg-white text-gray-800 self-start'}`,
         });
         msgDiv.textContent = c.message;
         chatContainer.appendChild(msgDiv);
@@ -2237,7 +2162,7 @@
     const container = createElement('div', { classes: 'flex flex-col min-h-screen pb-16 bg-white' });
 
     // Header with back button
-    const header = createElement('header', { classes: 'flex items-center justify-between bg-[${PRIMARY_COLOR}] text-white p-4 shadow-md sticky top-0 z-30' });
+    const header = createElement('header', { classes: `flex items-center justify-between bg-[${PRIMARY_COLOR}] text-white p-4 shadow-md sticky top-0 z-30` });
     const backBtn = createElement('button', { classes: 'focus:outline-none', attrs: { 'aria-label': 'Kembali' }, html: '<i class="fas fa-arrow-left fa-lg"></i>' });
     backBtn.addEventListener('click', () => {
       if(currentUser) {
@@ -2305,4 +2230,3 @@
 
 </body>
 </html>
-

@@ -69,25 +69,13 @@
       id: 'lawyer1',
       name: 'Andi Prasetyo',
       specialization: 'Hukum Perdata',
-      photo: 'https://placehold.co/150x150/png?text=Andi+Prasetyo+Lawyer+Portrait',
+      photo: 'pengacara1.png',
     },
     {
       id: 'lawyer2',
       name: 'Sari Dewi',
       specialization: 'Hukum Pidana',
-      photo: 'https://placehold.co/150x150/png?text=Sari+Dewi+Lawyer+Portrait',
-    },
-    {
-      id: 'lawyer3',
-      name: 'Budi Santoso',
-      specialization: 'Hukum Bisnis',
-      photo: 'https://placehold.co/150x150/png?text=Budi+Santoso+Lawyer+Portrait',
-    },
-    {
-      id: 'lawyer4',
-      name: 'Rina Wulandari',
-      specialization: 'Hukum Keluarga',
-      photo: 'https://placehold.co/150x150/png?text=Rina+Wulandari+Lawyer+Portrait',
+      photo: 'pengacara2.png',
     },
   ];
 
@@ -96,13 +84,13 @@
       id: 'notaris1',
       name: 'Dewi Kartika',
       specialization: 'Akta Notaris',
-      photo: 'https://placehold.co/150x150/png?text=Dewi+Kartika+Notaris+Portrait',
+      photo: 'pengacara4.png',
     },
     {
       id: 'notaris2',
       name: 'Joko Susilo',
       specialization: 'PPAT & Legalisasi',
-      photo: 'https://placehold.co/150x150/png?text=Joko+Susilo+Notaris+Portrait',
+      photo: 'pengacara3.png',
     },
   ];
 
@@ -111,7 +99,7 @@
       id: 'blog1',
       title: 'Prosedur Pembuatan Surat Kuasa',
       preview: 'Langkah-langkah mudah untuk membuat surat kuasa secara legal.',
-      thumbnail: 'https://placehold.co/400x250/png?text=Prosedur+Pembuatan+Surat+Kuasa+Legal+Document',
+      thumbnail: 'blog1.png',
       content: 'Isi lengkap artikel prosedur pembuatan surat kuasa...',
     },
     {
